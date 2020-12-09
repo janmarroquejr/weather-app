@@ -1,5 +1,5 @@
-var apiKey = config.API_KEY;
-var baseURL = config.BASE_URL;
+var apiKey = "e309c554998366999ff56422823c4fb7";
+var baseURL = "https://api.openweathermap.org/data/2.5/";
 
 const api = {
   key: apiKey,
@@ -21,6 +21,7 @@ const getResults = (query) => {
 };
 
 const displayResults = (weather) => {
+  console.log(weather);
   if (weather.message == "city not found") {
     alert("I can't find that city");
   }
